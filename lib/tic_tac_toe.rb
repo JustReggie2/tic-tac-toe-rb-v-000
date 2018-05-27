@@ -105,7 +105,7 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
-  if winner(board) == "X"
+  if winner(board) == "O"
     puts "Congratulations O!"
   elsif
     puts "Congratulations X!"
