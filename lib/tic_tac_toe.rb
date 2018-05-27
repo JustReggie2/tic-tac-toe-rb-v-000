@@ -94,7 +94,7 @@ end
 def winner(board)
   if won?(board).class == Array
     won?(board).each do |winner|
-      if board[winner[0]] == "X" || board[winner[0]] == "O"
+      if board[winner[0]] == "X" || "O"
         return board[winner[0]]
       end
     end
@@ -105,10 +105,10 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
-  if winner(board) == "O"
-    puts "Congratulations O!"
-  elsif
+  if winner(board) == "X"
     puts "Congratulations X!"
+  elsif
+    puts "Congratulations O!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
