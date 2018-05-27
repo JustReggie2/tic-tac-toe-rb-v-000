@@ -107,6 +107,7 @@ def play(board)
   end
 
   if won?(board)
+    require 'pry'
     binding.pry
     if winner(board) == "X"
       puts "Congratulations X!"
