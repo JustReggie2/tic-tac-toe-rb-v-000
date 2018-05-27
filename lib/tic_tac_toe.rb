@@ -105,6 +105,9 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
+  if winner(board) == "X"
+    puts "Congratulations X"
+  end
 end
     #if winner(board) == "X"
       #puts "Congratulations X"
