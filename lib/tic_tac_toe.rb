@@ -95,8 +95,8 @@ def winner(board)
   if won?(board).class == Array
     # return board[won?(board)[0]]
     won?(board).each do |winner|
-      if board[winner[0]] == "X" || board[winner[0]] == "O"
-        return board[winner[0]]
+      if board[winner] == "X" || board[winner] == "O"
+        return board[winner]
       end
     end
   end
